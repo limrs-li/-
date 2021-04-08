@@ -1,0 +1,204 @@
+<!--index.wxml-->
+<view class="bg-gradual-orange padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="">
+      <text class="margin-right-xl margin-left-xs">马思原</text><text class="margin-xl"></text><text
+        class="margin-xl"></text><text class="margin-left-xl">0/97题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:120%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">掌握程度（累计正确数0/累计做题数0）</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconright}}" bindtap="cuIconright1"></view>
+</view>
+
+<!-- 展开列表 -->
+<view style="display:{{display}}" >
+  <block wx:for="{{list}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center" data-ma="ma{{index}}"bindtap="mabindplay">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>"{{item.text}}"</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>
+
+<view class="bg-gradual-orange padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="">
+      <text class="margin-right-xl margin-left-xs">毛中特</text><text class="margin-xl"></text><text
+        class="margin-xl"></text><text class="margin-left-xl">0/30题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:120%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">掌握程度（累计正确数0/累计做题数0）</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconrightmao}}" bindtap="cuIconrightmao"></view>
+</view>
+
+<!-- 展开列表 -->
+<view style="display:{{displaymao}}">
+  <block wx:for="{{listmao}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center"bindtap="mabindplay"data-ma="mao{{index}}">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>{{item.text}}</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>
+
+<view class="bg-gradual-orange padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="">
+      <text class="margin-right-xl margin-left-xs">近代史</text><text class="margin-xl"></text><text
+        class="margin-xl"></text><text class="margin-left-xl">0/74题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:120%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">掌握程度（累计正确数0/累计做题数0）</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconrightjin}}" bindtap="cuIconrightjin"></view>
+</view>
+
+<!-- 展开列表 -->
+<view style="display:{{displayjin}}">
+  <block wx:for="{{listjin}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center"bindtap="mabindplay"data-ma="shi{{index}}">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>{{item.text}}</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>
+
+<view class="bg-gradual-orange padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="">
+      <text class="margin-right-xl margin-left-xs">思政修</text><text class="margin-xl"></text><text
+        class="margin-xl"></text><text class="margin-left-xl">0/35题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:120%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">掌握程度（累计正确数0/累计做题数0）</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconrightsi}}" bindtap="cuIconrightsi"></view>
+</view>
+
+<!-- 展开列表 -->
+<view style="display:{{displaysi}}">
+  <block wx:for="{{listsi}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center"bindtap="mabindplay"data-ma="si{{index}}">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>{{item.text}}</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>

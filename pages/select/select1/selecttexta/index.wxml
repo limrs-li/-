@@ -1,0 +1,69 @@
+<!--index.wxml-->
+
+<view style="width:100% ;padding:10% ;height:40%">
+  <!-- 题目 -->
+  <view class="bg-gradual-purple padding radius text-left shadow-blur" style="width:100%;height:100%">{{id}} . {{title}}</view>
+  <!-- 选项 -->
+  <view class="bg-gradual-{{colora}} padding radius text-center shadow-blur margin-top-xs"
+    style="display:flex;flex-direction: row;align-items:center" bindtap="A">
+    <text class="padding-right-lg ">A</text> <text class="text-left">{{A}}</text>
+  </view>
+  <view class="bg-gradual-{{colorb}} padding radius text-center shadow-blur margin-top-xs"
+    style="display:flex;flex-direction: row;align-items:center"bindtap="B">
+    <text class="padding-right-lg ">B</text> <text class="text-left">{{B}}</text>
+  </view>
+  <view class="bg-gradual-{{colorc}} padding radius text-center shadow-blur margin-top-xs"
+    style="display:flex;flex-direction: row;align-items:center"bindtap="C">
+    <text class="padding-right-lg ">C</text><text class="text-left">{{C}}</text>
+  </view>
+  <view class="bg-gradual-{{colord}} padding radius text-center shadow-blur margin-top-xs"
+    style="display:flex;flex-direction: row;align-items:center"bindtap="D">
+    <text class="padding-right-lg ">D</text> <text class="text-left">{{D}}</text>
+  </view>
+  <!-- 答案与解释 -->
+  <view class="bg-gradual-orange  padding radius text-left shadow-blur margin-top-sm" style="display:{{display}}">{{answer}}</view>
+  <!-- 按钮 -->
+  <view class="margin-top-sm" style="display:flex;flex-direction: row;align-items:center;justify-content:space-between">
+    <button class="round line-red cu-btn " bindtap="btnshang">上一题</button>
+    <button class="round line-red cu-btn" bindtap="btntijiao">提交</button>
+    <button class="round line-red cu-btn" bindtap="btnxia">下一题</button>
+  </view>
+
+
+</view>
+  <!-- 下边tab -->
+<view class="cu-bar tabbar margin-bottom-xl bg-black round" style="position:fixed;left:{{direction}};top:0;">
+  <view class="action text-orange">
+    <view class="cuIcon-emoji"></view> 开心
+  </view>
+  
+  <view class="action text-orange">
+    <view class="cuIcon-favor"></view> 收藏
+  </view>
+  <view class="action text-orange">
+    <view class="cuIcon-roundcheckfill badge">
+      <view class="cu-tag badge">99</view>
+
+    </view>
+    对
+  </view>
+
+  <view class="action text-orange">
+    <view class="cuIcon-roundclosefill">
+      <view class="cu-tag badge">99</view>
+    </view>
+    错
+  </view>
+  <view class="action text-orange" bindtap="all">
+    <view class="cuIcon-cascades">
+    </view>
+    11/146
+  </view>
+  <!-- 返回条 -->
+  <view class="action text-orange ">
+    <view class="cuIcon-{{btn}}" bindtap="btn">
+    </view>
+   
+  </view>
+
+</view>

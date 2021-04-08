@@ -1,0 +1,556 @@
+<!--index.wxml-->
+<!-- 2020 -->
+<view class="bg-gradual-purple padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="margin-bottom-sm">
+      <text class=" ">2020年研究生统一考试政治真题</text><text class="margin-left-xl ">0/97题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:150%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">完成量：30%</text>
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">准确率：30%</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconright2020}}" bindtap="cuIconright2020"></view>
+</view>
+<!-- 下拉列表 -->
+<view style="display:{{display2020}}">
+  <block wx:for="{{list2020}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center" bindtap="mabindplay{{index}}" data-ma="zhen2020{{index}}">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>{{item.text}}</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>
+<!-- 2019 -->
+<view class="bg-gradual-purple padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="margin-bottom-sm">
+      <text class=" ">2019年研究生统一考试政治真题</text><text class="margin-left-xl ">0/97题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:150%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">完成量：30%</text>
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">准确率：30%</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconright2019}}" bindtap="cuIconright2019"></view>
+</view>
+<!-- 下拉列表 -->
+<view style="display:{{display2019}}">
+  <block wx:for="{{list2019}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center" bindtap="mabindplay{{index}}" data-ma="zhen2019{{index}}">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>{{item.text}}</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>
+<!-- 2018 -->
+<view class="bg-gradual-purple padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="margin-bottom-sm">
+      <text class=" ">2018年研究生统一考试政治真题</text><text class="margin-left-xl ">0/97题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:150%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">完成量：30%</text>
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">准确率：30%</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconright2018}}" bindtap="cuIconright2018"></view>
+</view>
+<!-- 下拉列表 -->
+<view style="display:{{display2018}}">
+  <block wx:for="{{list2018}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center" bindtap="mabindplay{{index}}" data-ma="zhen2018{{index}}">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>{{item.text}}</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>
+<!-- 2017-->
+<view class="bg-gradual-purple padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="margin-bottom-sm">
+      <text class=" ">2017年研究生统一考试政治真题</text><text class="margin-left-xl ">0/97题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:150%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">完成量：30%</text>
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">准确率：30%</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconright2017}}" bindtap="cuIconright2018"></view>
+</view>
+<!-- 下拉列表 -->
+<view style="display:{{display2017}}">
+  <block wx:for="{{list2017}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center" bindtap="mabindplay{{index}}" data-ma="zhen2017{{index}}">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>{{item.text}}</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>
+
+<!-- 2016 -->
+<view class="bg-gradual-purple padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="margin-bottom-sm">
+      <text class=" ">2016年研究生统一考试政治真题</text><text class="margin-left-xl ">0/97题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:150%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">完成量：30%</text>
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">准确率：30%</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconright2016}}" bindtap="cuIconright2016"></view>
+</view>
+<!-- 下拉列表 -->
+<view style="display:{{display2016}}">
+  <block wx:for="{{list2016}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center" bindtap="mabindplay{{index}}" data-ma="zhen2016{{index}}">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>{{item.text}}</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>
+<!-- 2015 -->
+<view class="bg-gradual-purple padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="margin-bottom-sm">
+      <text class=" ">2015年研究生统一考试政治真题</text><text class="margin-left-xl ">0/97题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:150%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">完成量：30%</text>
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">准确率：30%</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconright2015}}" bindtap="cuIconright2015"></view>
+</view>
+<!-- 下拉列表 -->
+<view style="display:{{display2015}}">
+  <block wx:for="{{list2015}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center" bindtap="mabindplay{{index}}" data-ma="zhen2015{{index}}">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>{{item.text}}</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>
+
+
+
+<!-- 2014 -->
+<view class="bg-gradual-purple padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="margin-bottom-sm">
+      <text class=" ">2014年研究生统一考试政治真题</text><text class="margin-left-xl ">0/97题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:150%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">完成量：30%</text>
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">准确率：30%</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconright2014}}" bindtap="cuIconright2014"></view>
+</view>
+<!-- 下拉列表 -->
+<view style="display:{{display2014}}">
+  <block wx:for="{{list2014}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center" bindtap="mabindplay{{index}}" data-ma="zhen2014{{index}}">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>{{item.text}}</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>
+<!-- 2013 -->
+<view class="bg-gradual-purple padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="margin-bottom-sm">
+      <text class=" ">2013年研究生统一考试政治真题</text><text class="margin-left-xl ">0/97题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:150%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">完成量：30%</text>
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">准确率：30%</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconright2013}}" bindtap="cuIconright2013"></view>
+</view>
+<!-- 下拉列表 -->
+<view style="display:{{display2013}}">
+  <block wx:for="{{list2013}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center" bindtap="mabindplay{{index}}" data-ma="zhen2018{{index}}">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>{{item.text}}</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>
+<!-- 2012 -->
+<view class="bg-gradual-purple padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="margin-bottom-sm">
+      <text class=" ">2012年研究生统一考试政治真题</text><text class="margin-left-xl ">0/97题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:150%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">完成量：30%</text>
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">准确率：30%</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconright2012}}" bindtap="cuIconright2012"></view>
+</view>
+<!-- 下拉列表 -->
+<view style="display:{{display2012}}">
+  <block wx:for="{{list2012}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center" bindtap="mabindplay{{index}}" data-ma="zhen2018{{index}}">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>{{item.text}}</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>
+<!-- 2011 -->
+<view class="bg-gradual-purple padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="margin-bottom-sm">
+      <text class=" ">2011年研究生统一考试政治真题</text><text class="margin-left-xl ">0/97题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:150%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">完成量：30%</text>
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">准确率：30%</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconright2011}}" bindtap="cuIconright2011"></view>
+</view>
+<!-- 下拉列表 -->
+<view style="display:{{display2011}}">
+  <block wx:for="{{list2011}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center" bindtap="mabindplay{{index}}" data-ma="zhen2011{{index}}">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>{{item.text}}</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>
+
+<!-- 2010-->
+<view class="bg-gradual-purple padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+  style="display:flex;align-items:center;justify-content:space-around ">
+
+  <view style="display:flex;flex-direction:column ;align-items:flex-start">
+
+    <view class="margin-bottom-sm">
+      <text class=" ">2010年研究生统一考试政治真题</text><text class="margin-left-xl ">0/97题</text>
+    </view>
+
+    <view>
+
+      <view class="cu-progress round xs striped active margin-xs" style="width:150%">
+        <view class="bg-red" style="width:60%;"></view>
+      </view>
+
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">完成量：30%</text>
+      <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;">准确率：30%</text>
+    </view>
+  </view>
+
+  <view style="font-weight:800rpx;font-size:30rpx" class="{{cuIconright2010}}" bindtap="cuIconright2010"></view>
+</view>
+<!-- 下拉列表 -->
+<view style="display:{{display2010}}">
+  <block wx:for="{{list2010}}">
+    <view class="bg-gradual-pink padding-xs radius text-center shadow-blur  margin-sm "
+      style="display:flex;flex-direction: column; align-items:center" bindtap="mabindplay{{index}}" data-ma="zhen2010{{index}}">
+
+      <view style="display:flex; flex-direction: row; justify-content:space-between; width:100%">
+        <view>
+          <text class="cuIcon-playfill"></text>
+          <text style="font-size:25rpx">{{item.title}}</text>
+        </view>
+
+        <!-- 比例 -->
+        <text>{{item.text}}</text>
+      </view>
+
+      <!-- 进度条 -->
+      <view class="cu-progress round xs margin-sm  striped active">
+        <view class="bg-black" style="width:40%;"></view>
+      </view>
+
+
+
+
+    </view>
+  </block>
+</view>

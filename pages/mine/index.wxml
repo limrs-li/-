@@ -1,0 +1,63 @@
+<view class="container bg-gradual-purple padding radius-bottom text-left shadow-blur">
+  <view class="userinfo" style="width:100%">
+    <block wx:if="{{canIUseOpenData}}" calss="userinfo-opendata">
+      <view style="display:flex;flex-direction:row; align-items: center;justify-content:flex-start;width:100%"
+        class="padding">
+        <view class="userinfo-avatar margin-xs" style="width:40%">
+          <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <!-- 右边 -->
+        <view style="">
+          <open-data type="userNickName" class="text-bold text-xl"></open-data>
+          <view class="text-bold">赠言：头等舱可以优先登机 银行VIP可以不用排队 演唱会最贵的票位置也最好 世界从不平等 你有多努力 就有多特殊</view>
+        </view>
+
+      </view>
+
+    </block>
+    <!-- 权限 -->
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<!-- 菜单 -->
+<view class="cu-bar bg-purple  solid-bottom margin-top">
+  <view class="action">
+    <text class="cuIcon-title text-orange text-bold"></text> 菜单列表
+  </view>
+</view>
+<!--  -->
+<view class="radius solids-bottom">
+  <view class="cu-bar bg-purple light solid solid-bottom padding">
+    <view class="action">
+      <text class="cuIcon-circlefill text-cyan text-bold "></text>
+      我的收藏
+    </view>
+  </view>
+  <view class="cu-bar bg-purple light solid solid-bottom padding">
+    <view class="action">
+      <text class="cuIcon-addressbook text-olive text-bold "></text>
+      错题集
+    </view>
+  </view>
+
+  <view class="cu-bar bg-purple light solid solid-bottom padding ">
+    <view class="action">
+      <text class="cuIcon-question text-mauve text-bold "></text>
+      问题反馈
+    </view>
+  </view>
+  <view class="cu-bar bg-purple light solid solids-bottom padding ">
+    <view class="action solid-bottom">
+      <text class="cuIcon-friend text-pink text-bold "></text>
+      联系客服
+    </view>
+  </view>
+</view>

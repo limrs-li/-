@@ -1,0 +1,36 @@
+<!--index.wxml-->
+
+<view style="width:100% ;padding:10% ;height:40%">
+  <!-- 题目 -->
+  <view class="bg-gradual-red padding radius text-left shadow-blur" style="width:100%;height:100%">{{id}} . {{title}}</view>
+  <!-- 选项 -->
+  <view class="bg-gradual-green padding radius text-center shadow-blur margin-top-xs"
+    style="display:flex;flex-direction: row;align-items:center">
+    <text class="padding-right-lg ">A</text> <text class="text-left">{{A}}</text>
+  </view>
+  <view class="bg-gradual-green padding radius text-center shadow-blur margin-top-xs"
+    style="display:flex;flex-direction: row;align-items:center">
+    <text class="padding-right-lg ">B</text> <text class="text-left">{{B}}</text>
+  </view>
+  <view class="bg-gradual-green padding radius text-center shadow-blur margin-top-xs"
+    style="display:flex;flex-direction: row;align-items:center">
+    <text class="padding-right-lg ">C</text><text class="text-left">{{C}}</text>
+  </view>
+  <view class="bg-gradual-green padding radius text-center shadow-blur margin-top-xs"
+    style="display:flex;flex-direction: row;align-items:center">
+    <text class="padding-right-lg ">D</text> <text class="text-left">{{D}}</text>
+  </view>
+  <!-- 答案与解释 -->
+  <view class="bg-gradual-orange  padding radius text-left shadow-blur margin-top-sm" style="display:{{display}}">{{answer}}</view>
+  <!-- 按钮 -->
+  <view class="margin-top-sm" style="display:flex;flex-direction: row;align-items:center;justify-content:space-between">
+    <button class="round line-red cu-btn " bindtap="btnshang">上一题</button>
+    <button class="round line-red cu-btn" bindtap="btntijiao">提交</button>
+    <button class="round line-red cu-btn" bindtap="btnxia">下一题</button>
+  </view>
+
+
+</view>
+  <!-- 下边tab -->
+
+

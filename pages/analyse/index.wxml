@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<!-- 第一部分 -->
+<view class="bg-gradual-blue padding radius text-center shadow-blur margin-xs margin-top-xl"bindtap="mabindplay" data-ma="fen0">
+      <view class="text-lg">第一部分</view>
+      <view class="margin-top-sm text-Abc">马克思主义基原理概论</view>
+  </view>
+<!-- er -->
+<view class="bg-gradual-blue padding radius text-center shadow-blur margin-xs margin-top-lg"bindtap="mabindplay" data-ma="fen1">
+      <view class="text-lg" >第二部分</view>
+      <view class="margin-top-sm text-Abc">毛泽东思想和中国特色社会主义理论体系概论</view>
+  </view>
+  <!-- 三 -->
+  <view class="bg-gradual-blue padding radius text-center shadow-blur margin-xs margin-top-lg"bindtap="mabindplay" data-ma="fen2">
+      <view class="text-lg">第三部分</view>
+      <view class="margin-top-sm text-Abc">中国近代史纲要</view>
+  </view>
+    <!-- 四-->
+    <view class="bg-gradual-blue padding radius text-center shadow-blur margin-xs margin-top-lg"bindtap="mabindplay" data-ma="fen3">
+      <view class="text-lg">第四部分</view>
+      <view class="margin-top-sm text-Abc">思想品德修养与法律基础</view>
+  </view>
+    <!-- 五-->
+      <view class="bg-gradual-blue padding radius text-center shadow-blur margin-xs margin-top-lg"bindtap="mabindplay" data-ma="fen4">
+      <view class="text-lg">第五部分</view>
+      <view class="margin-top-sm text-Abc">形势与政策以及当代世界政治与基础</view>
+  </view>

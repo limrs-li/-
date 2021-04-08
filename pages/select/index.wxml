@@ -1,0 +1,114 @@
+<!--index.wxml-->
+<!--轮播图-->
+
+<swiper class="home-swiper" indicator-dots="true" autoplay="{{autoplay}}" interval="{{interval}}"
+  duration="{{duration}}" style="height:30%;width:100%;margin-block">
+  <block wx:for-items="{{lunboData}}">
+    <swiper-item>
+      <image src="{{item.imgurl}}" mode="scaleToFill" style="width:100%;" />
+    </swiper-item>
+  </block>
+</swiper>
+<view style="width:100%;height:2rpx;background:#aaa;margin-block: 0rpx 10rpx"></view>
+
+<view
+  style="height:30% ;width:100%;flex-direction：row;flex-wrap:nowrap;display:flex;justify-content:space-around;align-items:center">
+  <block wx:for-items="{{second}}">
+    <view
+      style="width:16%;height:85%;display:flex; flex-direction:column;justify-content:space-around;align-items:center">
+      <text style="font-size:20rpx"> {{item.text}}</text>
+      <view
+        style="background-image:url({{item.imgurl}});width:100%;height:40%;background-size:100% 100%;background-repeat:no-repeat;">
+      </view>
+
+      <text style="font-size:20rpx"> {{item.font}}</text>
+    </view>
+
+
+  </block>
+</view>
+<view class="bg-gradual-red padding radius text-center shadow-blur margin-xl">Hey！同学们，坚持每天打卡会有进步哦，来测
+  测你的学习情况吧！</view>
+<!--章节刷题 -->
+<view>
+  <text style="font-weight:600" class="margin-sm">科目刷题</text>
+  <text style="font-size:17rpx">(根据知识点针对练习，覆盖各个考点)</text>
+  <view class="bg-gradual-green padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+    style="display:flex;align-items:flex-start;justify-content:space-around ">
+
+
+    <view style="display:flex;flex-direction:column ;align-items:flex-start">
+      <view class="margin-bottom-sm">章节刷题</view>
+
+      <view>
+        <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;margin-left-xs;">第一天</text>
+        <text style="font-weight:400; font-size:20rpx">共4科目</text>
+
+        <view class="cu-progress round xs striped active margin-xs" style="width:250%">
+    <view class="bg-red" style="width:60%;"></view>
+        </view>
+      </view>
+    </view>
+
+    <view style="font-weight:800rpx;font-size:30rpx"
+      class="padding-sm bg-gradual-red cu-btn text-center round shadow-blur animation-{{asd}}" bindtap="toggle"
+      data-class="shake">立刻刷题</view>
+
+  </view>
+</view>
+
+<!-- 真题刷题 -->
+<view class="margin-top-lg">
+  <text style="font-weight:600" class="margin-sm">真题刷题</text>
+  <text style="font-size:17rpx">(真题重现，把握考点大方向)</text>
+  <view class="bg-gradual-green padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+    style="display:flex;align-items:flex-start;justify-content:space-around ">
+
+
+    <view style="display:flex;flex-direction:column ;align-items:flex-start">
+      <view class="margin-bottom-sm">历年真题</view>
+
+      <view>
+        <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;margin-left-xs;">第一天</text>
+        <text style="font-weight:400; font-size:20rpx">共3套卷                                </text>
+
+        <view class="cu-progress round xs striped active margin-xs" style="width:250%">
+    <view class="bg-red" style="width:60%;"></view>
+        </view>
+      </view>
+    </view>
+<!--  -->
+    <view style="font-weight:800rpx;font-size:30rpx"
+      class="padding-sm bg-gradual-red cu-btn text-center round shadow-blur animation-{{asdzhen}}" bindtap="togglezhen"
+      data-class="shake">立刻刷题</view>
+
+  </view>
+</view>
+
+<!-- 模拟刷题 -->
+<view class="margin-top-lg">
+  <text style="font-weight:600" class="margin-sm">模拟刷题</text>
+  <text style="font-size:17rpx">(最先模拟题已经上线，考前必做)</text>
+  <view class="bg-gradual-green padding radius text-center shadow-blur margin-top-xs margin-lr-xs"
+    style="display:flex;align-items:flex-start;justify-content:space-around ">
+
+
+    <view style="display:flex;flex-direction:column ;align-items:flex-start">
+      <view class="margin-bottom-sm">摸底测试</view>
+
+      <view>
+        <text style="font-weight:400; font-size:20rpx" class="margin-right-xl;margin-left-xs;">第一天</text>
+        <text style="font-weight:400; font-size:20rpx">共3试卷                                </text>
+
+        <view class="cu-progress round xs striped active margin-xs" style="width:250%">
+    <view class="bg-red" style="width:60%;"></view>
+        </view>
+      </view>
+    </view>
+
+    <view style="font-weight:800rpx;font-size:30rpx"
+      class="padding-sm bg-gradual-red cu-btn text-center round shadow-blur animation-{{asdmo}}" bindtap="togglemo"
+      data-class="shake">立刻刷题</view>
+
+  </view>
+</view>

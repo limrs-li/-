@@ -1,0 +1,54 @@
+{
+  "pages":[
+    
+    "pages/select/index",
+    "pages/analyse/index",
+    "pages/mine/index",
+    "pages/icon",
+    "pages/select/select1/index",
+    "pages/select/select2/index",
+    "pages/select/select3/index",
+
+    "pages/select/select2/select21/index",
+    "pages/select/select2/select22/index",
+
+    "pages/select/select3/select31/index",
+    "pages/analyse/analyse/index",
+    "pages/select/select1/selecttext/index",
+    "pages/select/select1/selecttexta/index",
+    "pages/select/select1/yimes/index",
+  
+    "pages/transcript/index",
+    "pages/logs/logs"
+
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#B99CFF",
+    "navigationBarTitleText": "Form Now On",
+    "navigationBarTextStyle":"white"
+   
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/select/index",
+      "text": "首页",
+      "selectedIconPath": "/pages/icon/shouye.png",
+      "iconPath": "/pages/icon/home.png"
+    }, {
+      "pagePath": "pages/analyse/index",
+      "text": "分析",
+      "selectedIconPath": "/pages/icon/icon1.png",
+      "iconPath": "/pages/icon/zhexiantu.png"
+    }, {
+      "pagePath": "pages/mine/index",
+      "text": "我的",
+      "selectedIconPath": "/pages/icon/wode.png",
+      "iconPath": "/pages/icon/we.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+
+}

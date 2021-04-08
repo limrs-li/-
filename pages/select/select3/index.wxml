@@ -1,0 +1,23 @@
+<!--index.wxml-->
+
+<!-- 第一部分 -->
+<view class="bg-gradual-blue padding radius text-center shadow-blur margin-xs margin-top-xl" bindtap="bindtap1" data-ma="mo0">
+      <view class="text-lg">模拟卷一</view>
+      <view class="margin-top-sm text-Abc">马克思主义基原理概论</view>
+  </view>
+<!-- er -->
+<view class="bg-gradual-blue padding radius text-center shadow-blur margin-xs margin-top-lg"bindtap="bindtap2" data-ma="mo1">
+      <view class="text-lg">模拟卷二</view>
+      <view class="margin-top-sm text-Abc">毛泽东思想和中国特色社会主义理论体系概论</view>
+  </view>
+  <!-- 三 -->
+  <view class="bg-gradual-blue padding radius text-center shadow-blur margin-xs margin-top-lg"bindtap="bindtap3" data-ma="mo2">
+      <view class="text-lg">模拟卷三</view>
+      <view class="margin-top-sm text-Abc">中国近代史纲要</view>
+  </view>
+    <!-- 四-->
+    <view class="bg-gradual-blue padding radius text-center shadow-blur margin-xs margin-top-lg"bindtap="bindtap4" data-ma="mo3">
+      <view class="text-lg">模拟卷四</view>
+      <view class="margin-top-sm text-Abc">思想品德修养与法律基础</view>
+  </view>
+
